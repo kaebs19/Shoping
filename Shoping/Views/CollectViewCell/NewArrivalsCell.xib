@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewArrivalsCell" customModule="Shoping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="629"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="629"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3u-Iu-bzd">
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="629"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="sut-sZ-pMK">
+                                <rect key="frame" x="0.0" y="0.0" width="426" height="503"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sut-sZ-pMK" secondAttribute="height" multiplier="144:170" id="J02-ni-JQ9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="w0Y-rY-9S2">
+                                <rect key="frame" x="0.0" y="511" width="426" height="118"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puff-sleeved Dress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7g-O7-UPg">
+                                        <rect key="frame" x="0.0" y="0.0" width="426" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-Yt-1n9">
+                                        <rect key="frame" x="0.0" y="94" width="426" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="sut-sZ-pMK" firstAttribute="top" secondItem="k3u-Iu-bzd" secondAttribute="top" id="12f-Mp-ctS"/>
+                            <constraint firstItem="sut-sZ-pMK" firstAttribute="leading" secondItem="k3u-Iu-bzd" secondAttribute="leading" id="7xb-10-qNX"/>
+                            <constraint firstAttribute="trailing" secondItem="w0Y-rY-9S2" secondAttribute="trailing" id="Ev5-TI-kIn"/>
+                            <constraint firstAttribute="bottom" secondItem="w0Y-rY-9S2" secondAttribute="bottom" id="SPe-aB-BvF"/>
+                            <constraint firstItem="w0Y-rY-9S2" firstAttribute="top" secondItem="sut-sZ-pMK" secondAttribute="bottom" constant="8" id="d21-hg-aVX"/>
+                            <constraint firstAttribute="trailing" secondItem="sut-sZ-pMK" secondAttribute="trailing" id="piv-71-61o"/>
+                            <constraint firstItem="w0Y-rY-9S2" firstAttribute="leading" secondItem="k3u-Iu-bzd" secondAttribute="leading" id="zo1-yC-ln7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT3-Se-Cdj">
+                        <rect key="frame" x="193.66666666666666" y="605" width="38.666666666666657" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="0.59385347682119205" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="k3u-Iu-bzd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6zp-VA-kFC"/>
+                <constraint firstAttribute="bottom" secondItem="sT3-Se-Cdj" secondAttribute="bottom" id="9zz-23-Id1"/>
+                <constraint firstItem="k3u-Iu-bzd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BtQ-ol-JUb"/>
+                <constraint firstItem="sT3-Se-Cdj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OfO-qU-WQy"/>
+                <constraint firstAttribute="bottom" secondItem="k3u-Iu-bzd" secondAttribute="bottom" id="SOi-L3-xaD"/>
+                <constraint firstAttribute="trailing" secondItem="k3u-Iu-bzd" secondAttribute="trailing" id="Y6u-nb-JCL"/>
+            </constraints>
+            <size key="customSize" width="426" height="629"/>
+            <connections>
+                <outlet property="mainView" destination="k3u-Iu-bzd" id="xgY-Xm-bKa"/>
+                <outlet property="priceLable" destination="8F4-Yt-1n9" id="nAF-sN-ZDG"/>
+                <outlet property="productImageView" destination="sut-sZ-pMK" id="6MS-7B-gdr"/>
+                <outlet property="productTitleLable" destination="Z7g-O7-UPg" id="bq2-Vz-lFM"/>
+            </connections>
+            <point key="canvasLocation" x="351.14503816793894" y="167.25352112676057"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle" width="144" height="170"/>
+    </resources>
+</document>
