@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewArrivalsCell: UICollectionViewCell {
+class ArrivalsCVCell: UICollectionViewCell {
     
     // MARK: - Outlets
 
@@ -24,6 +24,8 @@ class NewArrivalsCell: UICollectionViewCell {
         // Initialization code
         
         productImageView.addCornerRadius(radius: 8)
+        productImageView.clipsToBounds = true
+        
         
         
     }
