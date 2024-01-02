@@ -49,6 +49,9 @@ class HomeVC: UIViewController {
         }
     }
 
+    @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
+        showMenu()
+    }
     
 }
 

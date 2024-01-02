@@ -30,7 +30,11 @@ class CategoryVC: UIViewController {
     }
     
     // MARK: -  Configure Action - Func
-
+    @IBAction func ShowMenuButton(_ sender: UIBarButtonItem) {
+        showMenu()
+    }
+    
+    
    private func initUI(){
         initTV(tv: categoryTV)
         reloadData(tv: categoryTV)

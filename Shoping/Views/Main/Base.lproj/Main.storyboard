@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oW7-z3-8bk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iUi-rU-I2H">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -377,6 +377,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbX-Zl-VxH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3802" y="910"/>
+        </scene>
+        <!--Side MenuVC-->
+        <scene sceneID="CfC-xr-eLQ">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuVC" id="fnV-8g-PLn" customClass="SideMenuVC" customModule="Shoping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZG-aW-wm7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDo-hz-NZz">
+                                <rect key="frame" x="45" y="59" width="348" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profil_Edit" translatesAutoresizingMaskIntoConstraints="NO" id="dt5-zb-0YW">
+                                        <rect key="frame" x="261" y="50" width="63" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dt5-zb-0YW" secondAttribute="height" multiplier="1:1" id="wi9-kE-8X6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Efsan Izmirli" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSj-Ug-DDO">
+                                        <rect key="frame" x="20" y="133" width="304" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M00-UM-tEz">
+                                        <rect key="frame" x="0.0" y="187" width="348" height="467"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5C-4t-WPb">
+                                        <rect key="frame" x="150" y="694" width="174" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log out" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGI-IK-dKV">
+                                                <rect key="frame" x="0.0" y="4" width="132" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fta-zX-rM7">
+                                                <rect key="frame" x="149" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Fta-zX-rM7" secondAttribute="height" multiplier="24:24" id="jfi-F0-DEx"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="log-out"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="h5C-4t-WPb" firstAttribute="leading" secondItem="QDo-hz-NZz" secondAttribute="leading" constant="150" id="Acg-Zm-Cxy"/>
+                                    <constraint firstAttribute="trailing" secondItem="M00-UM-tEz" secondAttribute="trailing" id="CjY-Ni-VvI"/>
+                                    <constraint firstItem="FSj-Ug-DDO" firstAttribute="top" secondItem="dt5-zb-0YW" secondAttribute="bottom" constant="20" id="Jp6-QV-MkR"/>
+                                    <constraint firstItem="FSj-Ug-DDO" firstAttribute="leading" secondItem="QDo-hz-NZz" secondAttribute="leading" constant="20" id="SOu-Vv-gCz"/>
+                                    <constraint firstItem="h5C-4t-WPb" firstAttribute="top" secondItem="M00-UM-tEz" secondAttribute="bottom" constant="40" id="UWr-X0-Vye"/>
+                                    <constraint firstAttribute="trailing" secondItem="dt5-zb-0YW" secondAttribute="trailing" constant="24" id="WQ9-CS-uLB"/>
+                                    <constraint firstItem="dt5-zb-0YW" firstAttribute="top" secondItem="QDo-hz-NZz" secondAttribute="top" constant="50" id="Y6m-6A-xDo"/>
+                                    <constraint firstAttribute="trailing" secondItem="FSj-Ug-DDO" secondAttribute="trailing" constant="24" id="Z1M-gi-4aT"/>
+                                    <constraint firstItem="M00-UM-tEz" firstAttribute="leading" secondItem="QDo-hz-NZz" secondAttribute="leading" id="fWf-91-ftg"/>
+                                    <constraint firstItem="M00-UM-tEz" firstAttribute="top" secondItem="FSj-Ug-DDO" secondAttribute="bottom" constant="30" id="hq7-17-T17"/>
+                                    <constraint firstAttribute="bottom" secondItem="h5C-4t-WPb" secondAttribute="bottom" constant="40" id="i7A-Ss-Bw6"/>
+                                    <constraint firstAttribute="trailing" secondItem="h5C-4t-WPb" secondAttribute="trailing" constant="24" id="osT-uc-ZWQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTJ-kZ-nq8">
+                                <rect key="frame" x="339" y="142" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PTJ-kZ-nq8" secondAttribute="height" multiplier="1:1" id="NiW-pH-Ecm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CUd-cX-Zbs"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dt5-zb-0YW" firstAttribute="width" secondItem="CUd-cX-Zbs" secondAttribute="width" multiplier="0.16" id="41f-bE-vbe"/>
+                            <constraint firstItem="PTJ-kZ-nq8" firstAttribute="width" secondItem="CUd-cX-Zbs" secondAttribute="width" multiplier="0.0763359" id="Eur-qs-W3o"/>
+                            <constraint firstItem="Fta-zX-rM7" firstAttribute="width" secondItem="CUd-cX-Zbs" secondAttribute="width" multiplier="0.064" id="Gou-9Q-x3A"/>
+                            <constraint firstItem="QDo-hz-NZz" firstAttribute="top" secondItem="CUd-cX-Zbs" secondAttribute="top" id="Iag-ev-CMi"/>
+                            <constraint firstItem="PTJ-kZ-nq8" firstAttribute="bottom" secondItem="dt5-zb-0YW" secondAttribute="bottom" id="ZGu-Uq-LC1"/>
+                            <constraint firstItem="PTJ-kZ-nq8" firstAttribute="trailing" secondItem="dt5-zb-0YW" secondAttribute="trailing" id="s4Y-fy-Hv3"/>
+                            <constraint firstItem="QDo-hz-NZz" firstAttribute="bottom" secondItem="CUd-cX-Zbs" secondAttribute="bottom" id="sKx-SV-Ujd"/>
+                            <constraint firstItem="QDo-hz-NZz" firstAttribute="trailing" secondItem="CUd-cX-Zbs" secondAttribute="trailing" id="w8d-do-iTp"/>
+                            <constraint firstItem="QDo-hz-NZz" firstAttribute="leading" secondItem="CUd-cX-Zbs" secondAttribute="leading" constant="45" id="wuV-er-Tjz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editProfileImage" destination="PTJ-kZ-nq8" id="gBc-LC-eHE"/>
+                        <outlet property="menuTV" destination="M00-UM-tEz" id="iER-TH-RY2"/>
+                        <outlet property="profileImageView" destination="dt5-zb-0YW" id="gdT-dH-Mer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cm8-iE-cbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4749" y="908"/>
         </scene>
         <!--Sgin UpVC-->
         <scene sceneID="mkl-S2-l0T">
@@ -905,8 +1000,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-Bq-kDw">
-                                <rect key="frame" x="0.0" y="167" width="393" height="685"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-Bq-kDw">
+                                <rect key="frame" x="0.0" y="167" width="393" height="602"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
@@ -921,17 +1016,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Y0j-h9-Syx" firstAttribute="trailing" secondItem="TdZ-TF-11P" secondAttribute="trailing" constant="24" id="1bZ-iJ-z5i"/>
-                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="leading" secondItem="Y0j-h9-Syx" secondAttribute="leading" id="2FV-Do-HVB"/>
-                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="top" secondItem="TdZ-TF-11P" secondAttribute="bottom" constant="16" id="7pf-Fg-4MF"/>
+                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="trailing" secondItem="Y0j-h9-Syx" secondAttribute="trailing" id="DHk-y4-tZT"/>
                             <constraint firstItem="TdZ-TF-11P" firstAttribute="top" secondItem="Y0j-h9-Syx" secondAttribute="top" constant="24" id="LXD-aF-RkP"/>
+                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="bottom" secondItem="Y0j-h9-Syx" secondAttribute="bottom" id="NO6-DO-OBa"/>
+                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="top" secondItem="TdZ-TF-11P" secondAttribute="bottom" constant="16" id="dE8-PG-ap9"/>
                             <constraint firstItem="TdZ-TF-11P" firstAttribute="leading" secondItem="Y0j-h9-Syx" secondAttribute="leading" constant="24" id="dyr-xP-Jaz"/>
-                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="trailing" secondItem="Y0j-h9-Syx" secondAttribute="trailing" id="eJE-Uv-fDp"/>
-                            <constraint firstAttribute="bottom" secondItem="K8c-Bq-kDw" secondAttribute="bottom" id="n4j-4g-bLT"/>
+                            <constraint firstItem="K8c-Bq-kDw" firstAttribute="leading" secondItem="Y0j-h9-Syx" secondAttribute="leading" id="lTw-bc-RWw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VeS-fp-Pax">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="t5A-v3-Imb">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="ShowMenuButton:" destination="oW7-z3-8bk" id="n6c-Rv-OaJ"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="shopping-bag" id="geb-J1-YEq">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -996,6 +1094,9 @@
                     <navigationItem key="navigationItem" id="B4w-lc-11V">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="WN1-My-3ba">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="showMenu:" destination="G5a-JX-WsR" id="ZdX-Z7-WkX"/>
+                            </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="shopping-bag" id="rJK-ya-2UT">
@@ -1234,6 +1335,9 @@
                     <navigationItem key="navigationItem" id="1GK-G8-1J2">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="pQA-sz-Byr">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="showSideMenu:" destination="L3E-5N-lPB" id="Vfe-W0-2CK"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="shopping-bag" id="MYL-rV-8AM">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1276,11 +1380,13 @@
         <image name="Login_with_apple" width="115" height="115"/>
         <image name="Login_with_facbook" width="115" height="115"/>
         <image name="Login_with_google" width="115" height="115"/>
+        <image name="Profil_Edit" width="60.666667938232422" height="60.666667938232422"/>
         <image name="chevron-left" width="24" height="24"/>
-        <image name="eye" width="24" height="18"/>
+        <image name="eye" width="24" height="24"/>
         <image name="eye-off" width="25" height="25"/>
         <image name="filter" width="21" height="19"/>
         <image name="home" width="24" height="24"/>
+        <image name="log-out" width="24" height="24"/>
         <image name="login" width="91" height="96.333335876464844"/>
         <image name="menu" width="24" height="24"/>
         <image name="qr code" width="24" height="24"/>

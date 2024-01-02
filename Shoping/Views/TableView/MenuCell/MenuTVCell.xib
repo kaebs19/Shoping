@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="MenuTVCell" customModule="Shoping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5f3-ke-puS">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="88"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="bLg-Ut-xJS">
+                                <rect key="frame" x="24" y="0.0" width="379" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orders" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMU-Sf-qlr">
+                                        <rect key="frame" x="0.0" y="34" width="333.66666666666669" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-OG-Fzk">
+                                        <rect key="frame" x="351.66666666666669" y="30.333333333333336" width="27.333333333333314" height="27.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ncc-OG-Fzk" secondAttribute="height" multiplier="1:1" id="e53-7S-USl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bLg-Ut-xJS" firstAttribute="leading" secondItem="5f3-ke-puS" secondAttribute="leading" constant="24" id="3YT-MX-f0I"/>
+                            <constraint firstAttribute="bottom" secondItem="bLg-Ut-xJS" secondAttribute="bottom" id="FzT-jD-oyb"/>
+                            <constraint firstAttribute="trailing" secondItem="bLg-Ut-xJS" secondAttribute="trailing" constant="24" id="dQX-2a-ti1"/>
+                            <constraint firstItem="bLg-Ut-xJS" firstAttribute="top" secondItem="5f3-ke-puS" secondAttribute="top" id="ufI-bI-QBz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5f3-ke-puS" secondAttribute="bottom" id="SdU-Ap-LaB"/>
+                    <constraint firstItem="5f3-ke-puS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="exs-To-ORb"/>
+                    <constraint firstItem="5f3-ke-puS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jxZ-Vx-fLB"/>
+                    <constraint firstAttribute="trailing" secondItem="5f3-ke-puS" secondAttribute="trailing" id="vDZ-uT-4dM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="ncc-OG-Fzk" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.064" id="AnS-pL-i7J"/>
+            </constraints>
+            <connections>
+                <outlet property="menuImage" destination="ncc-OG-Fzk" id="oS4-ji-lzC"/>
+                <outlet property="menuTitleLable" destination="JMU-Sf-qlr" id="1Bd-LH-XSv"/>
+            </connections>
+            <point key="canvasLocation" x="96.946564885496173" y="0.70422535211267612"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list" width="24" height="24"/>
+    </resources>
+</document>

@@ -37,6 +37,10 @@ class FeaturedVC: UIViewController {
     }
     
     
+    @IBAction func showMenu(_ sender: UIBarButtonItem) {
+        showMenu()
+        print("Done")
+    }
 }
 
 // MARK: -  CollectionView Delegate & DataSource
