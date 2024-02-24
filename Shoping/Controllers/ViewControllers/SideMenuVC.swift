@@ -66,6 +66,34 @@ extension SideMenuVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      //  print(indexPath.row)
+        switch indexPath.row {
+        case 0 :
+            print("0")
+        case 1 :
+            print("1")
+
+        case 2 :
+            print("2")
+
+        case 3 :
+            print("3")
+
+        case 4 :
+            print("4")
+
+        case 5 :
+            print("5")
+        case 6 :
+            print("6")
+
+        default:
+            print("7")
+
+        }
+    }
 }
 
 
